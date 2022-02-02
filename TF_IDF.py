@@ -8,14 +8,6 @@ Created on Mon Dec 27 20:48:05 2021
 
 
 
-#44128127874_Selim Başpınar 63925397150_MehmetAli
-
-
-
-
-
-
-
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import CountVectorizer
@@ -26,7 +18,7 @@ from snowballstemmer import TurkishStemmer
 
 #Import file
 all_txt_files =[]
-for file in Path("./input/hw4_dataset/").rglob("*.txt"):
+for file in Path("./input/dataset/").rglob("*.txt"):
      all_txt_files.append(file.parent / file.name)
 
 all_docs = []
